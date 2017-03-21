@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surfaceView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="rtmp://10.0.5.20/live/steram"
+            android:ems="10"
+            android:layout_alignParentStart="true"
+            android:id="@+id/editText" />
+
+        <Button
+            android:text="开启"
+            android:layout_width="68dp"
+            android:layout_height="42dp"
+            android:id="@+id/start"
+            android:gravity="bottom"/>
+    </LinearLayout>
+
+</RelativeLayout>
